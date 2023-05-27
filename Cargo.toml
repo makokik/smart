@@ -1,0 +1,33 @@
+[workspace]
+members = [
+    "crates/zlib-searcher",
+    "crates/zlib-searcher-core",
+    "crates/zlib-searcher-desktop",
+]
+
+
+[workspace.package]
+edition = "2021"
+authors = ["zu1k <i@zu1k.com>"]
+description = "search z-library index."
+homepage = "https://github.com/zlib-searcher/zlib-searcher"
+repository = "https://github.com/zlib-searcher/zlib-searcher"
+license = "MIT"
+exclude = [".github/", "index/", "frontend/"]
+
+
+[profile.release]
+strip = true
+lto = true
+opt-level = 3
+codegen-units = 1
+
+
+[workspace.dependencies]
+anyhow = "1.0"
+env_logger = "0.10"
+log = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_with = "2.0"
+
+zlib-searcher-core = { path = "crates/zlib-searcher-core" }
