@@ -4,3 +4,4 @@
 *.csv
 /release
 /zlib-searcher
+/lock
