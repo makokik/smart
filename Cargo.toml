@@ -5,7 +5,6 @@ members = [
     "crates/zlib-searcher-desktop",
 ]
 
-
 [workspace.package]
 edition = "2021"
 authors = ["zu1k <i@zu1k.com>"]
