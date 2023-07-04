@@ -1,6 +1,5 @@
 /target
 /index
-
 *.csv
 /release
 /zlib-searcher
