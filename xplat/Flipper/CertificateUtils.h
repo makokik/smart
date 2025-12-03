@@ -32,3 +32,9 @@ bool generateCertPKCS12(
 } // namespace facebook
 
 #endif /* CertificateUtils_hpp */
+// NOLINTNEXTLINE(google-readability-namespace-comments)
+}  // namespace HWY_NAMESPACE
+}  // namespace hwy
+HWY_AFTER_NAMESPACE();
+
+#endif  // HIGHWAY_HWY_CONTRIB_ALGO_TRANSFORM_INL_H_
